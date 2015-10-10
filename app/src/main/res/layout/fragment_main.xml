@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
+        android:id="@+id/ivBackground"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@drawable/singapore_bg"
@@ -22,14 +23,14 @@
         android:id="@+id/fabButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
         android:layout_marginRight="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="172dp"
-        android:src="@drawable/ic_plus"
+        android:src="@drawable/ic_done_white_24dp"
+        app:layout_anchor="@id/ivBackground"
+        app:layout_anchorGravity="right|end|bottom"
         app:borderWidth="0dp"
         app:elevation="6dp"
         app:fabSize="normal"
         app:pressedTranslationZ="16dp"/>
 
-</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
