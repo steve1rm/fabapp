@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             /* First parameter is the id of the layout we want to add this fragment into
                Second parameter we get a new instance of the fragment has pass in some data
                Third parameter is good practice to add this, the string tag and for referencing fragments (headless fragments) */
-            fragmentTransaction.add(R.id.fragment_container, BlankFragment.getNewInstance(1234), "blankFragment");
+            fragmentTransaction.add(R.id.fragment_container, FabFragment.getNewInstance(1234), "FabFragment");
             /* final step commit the fragment thus displaying it in our UI */
             fragmentTransaction.commit();
         }
