@@ -32,11 +32,11 @@ public class FabFragment extends Fragment {
         final Bundle args = new Bundle();
         args.putInt(DATA_KEY, data);
 
-        FabFragment blankFragment = new FabFragment();
+        FabFragment fabFragment = new FabFragment();
         /* Sets the argument to be retrieved in the CreateView later */
-        blankFragment.setArguments(args);
+        fabFragment.setArguments(args);
 
-        return blankFragment;
+        return fabFragment;
     }
 
     @Override
